@@ -81,6 +81,12 @@ key_features = [
 ]
 
 testimonials = [
+        {
+            'speaker': 'Ka Tang',
+            'title': 'Director, Enterprise Data Architecture',
+            'headline': 'Discover Financial Services',
+            'quote': 'Discover is focused on leveraging leading edge technology that helps us quickly bring products to market while providing exceptional customer service. Kylo has a unique framework that has the potential to accelerate development and value on new data sources that leverage Apache NiFi.',
+        },
 		{
 			'speaker': 'Matt Hutton',
 			'title': 'Director, R&amp;D',
