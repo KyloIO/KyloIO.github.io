@@ -1,0 +1,412 @@
+element {
+    --primary-bg-color: #3f4d53;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+.hero {
+  background: url('../assets/hero-bg2.jpg') 50% 50% repeat;
+  height: 120px;
+  position:relative;
+  opacity: 0.80;
+
+}
+
+.hero:hover { }
+
+#bootstrap-overrides .navbar-primary {
+    background-color: #3f4d53;
+    padding-top: 5px;
+}
+
+#bootstrap-overrides .navbar-link {
+    color: white;
+}
+#bootstrap-overrides .navbar-icon {
+    width:80px;
+    margin-top:-12px;
+}
+
+#bootstrap-overrides .navbar {
+	border:0;
+	margin-bottom: 0;
+}
+
+#bootstrap-overrides .nav-a-btn {
+	padding-top: 7px;
+}
+
+
+/* ===================== 
+        Page Titles
+   ===================== */
+.title,
+.subtitle {
+	text-align: center;
+	margin: 0;
+}
+
+.title {
+	background-color: #9ea1a3;
+	color: #fff;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: 600;
+}
+
+.subtitle {
+  background-color: #e3ecf2;
+  color: #5D5D5D;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  padding: 15px 200px 15px 200px;
+}
+
+/* ===================== 
+         Features
+   ===================== */
+
+#features {
+	margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+.featurette {
+	margin-top: 30px;
+}
+
+.feature-heading {
+	line-height: 1;
+	letter-spacing: -1px;
+	text-align: center;
+	color: white;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+}
+
+
+.feature-subheading {
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+.featurette-more {
+}
+
+@media (min-width: 768px) {
+	.feature-heading {
+		font-size: 32px;
+	}
+	.featurette-heading {
+		font-size: 32px;
+	}
+       .feature-subheading {
+         font-size: 24px;
+        }
+}
+
+.btn-orange {
+	border-color: #e28b3e;
+	color: #e28b3e;
+	border-width: 3px;
+    font-weight: 600;
+   	background-color: #fafafa;
+}
+
+
+.btn-more {
+  color: #333;
+  font-weight: 600;
+  background-color: #fafafa;
+  padding: 5px 0px;
+}
+
+
+/* ===================== 
+   Testimonials Carousel
+   ===================== */
+
+#testimonials {
+  padding-top: 30px;
+}
+
+#bootstrap-overrides .carousel {
+
+}
+
+#bootstrap-overrides .carousel-caption {
+  color: #338ac6;
+  font-style: italic;
+  position: initial;
+  text-shadow: none;
+}
+
+#bootstrap-overrides .carousel .item {
+  height: 300px;
+  background-color: #eaebec;
+}
+
+#bootstrap-overrides .carousel-control {
+    background-image: none;
+    width: 10%;
+}
+
+#bootstrap-overrides .carousel-caption h1 {
+  font-size: 32px;
+}
+
+#bootstrap-overrides .carousel .row {
+	overflow: hidden;
+}
+
+#bootstrap-overrides .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: #3f4d53;
+}
+
+#bootstrap-overrides .dropdown-menu {
+  background-color: #3f4d53;
+  border:1px solid #3f4d53;
+}
+
+#bootstrap-overrides .dropdown-menu>li>a {
+  color: white;
+}
+
+#bootstrap-overrides .dropdown-menu > li > a:hover, #bootstrap-overrides .dropdown-menu > li > a:focus {
+   color: #ffffff;
+   background-color: #e28b3e;
+}
+
+
+.carousel .glyphicon-menu-left,
+.carousel .glyphicon-menu-right {
+    font-size: 80px;
+    top: 35%;
+    color: #338ac6;
+}
+
+.quote-symbol h1 {
+    color: #c8dae7;
+    font-size: 30em;
+    font-weight: 600;
+    position: relative;
+    bottom: .15em;
+    right: .00em;
+}
+
+.quote-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: justify;
+  margin-top:35px;
+}
+
+.quote-speaker,
+.quote-speaker-details {
+	color: #338ac6;
+}
+
+.quote-speaker {
+    position: absolute;
+    white-space: nowrap;
+    bottom: 19em;
+    margin: 10px 10px 0px 0px;
+}
+
+.quote-speaker h2 {
+    font-size: 28px;
+}
+
+div.quote-speaker-details h3 {
+  margin-left: 16px;
+}
+
+.quote-speaker-details {
+    position: absolute;
+    bottom: 17em;
+    white-space: nowrap;
+}
+
+.btn-blue {
+	color: #338ac6;
+    background-color: #d2dce4;
+    border-color: #338ac6;
+    border-width: 3px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.link-more {
+  color: #338ac6;
+  font-weight: 600;
+  font-style: normal;
+  margin-right: 20px;
+  margin-left: -10px;
+}
+
+
+/* ====================== 
+   Feature Sidebar Styles
+   ====================== */
+.feature-sidebar nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.feature-sidebar nav ul li {
+	padding-bottom: 5px;
+}
+
+#bootstrap-overrides .feature-sidebar .navbar-link {
+	color: #52646c;
+    font-size: 1.3em;
+}
+
+.feature-sidebar h3 a {
+	color: #e28b3e;
+	font-size: 32px;
+}
+
+.feature-sidebar button {
+	margin-top: 20px;
+}
+/*
+@media (max-width: 995px) {
+	.feature-sidebar {
+		display: none;
+	}
+}
+*/
+.img-circle {
+  border: lightgrey 2px solid;
+}
+
+
+/* ================== 
+   Quickstart  Styles
+   ================== */
+.circle-li {
+	width: 35px;
+	height: 35px;
+	background: #3291e2;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	text-align: center;
+
+    padding-top: 7px;
+    padding-left: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+.step-hr {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   /* border: grey solid 1px; */
+}
+
+
+.text-blue {
+	color: #3291e2;
+}
+
+.text-orange {
+	color: #e28b3e;
+}
+
+.text-normal {
+    color: #333;
+}
+
+.btn-solid-orange {
+	background-color: #e28b3e;
+	color: white;
+}
+
+.h2-aligned {
+	margin-top: 10px;
+}
+
+.step-text-aligned {
+  margin-top:18px;
+}
+
+
+/* ============== 
+   Footer  Styles
+   ============== */
+#bootstrap-overrides footer {
+    background-color: #829297;
+    padding-bottom: 15px;
+}
+
+footer nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+footer nav ul li {
+	padding-bottom: 5px;
+}
+
+footer h3 a {
+	color: #bccbd0;
+}
+
+.social-icon {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.social-icon img {
+	width: 100%;
+}
+
+#copyright {
+	color: #b2c1c6;
+	bottom: -20px;
+}
+
+.more-small {
+  padding: 10px 10px;
+  font-size: 12px;
+}
+
+iframe.docs {
+  display: block;
+  background: #000;
+  border: none;
+  height: calc(100vh - 130px);
+  width: 100%;
+}
+
+.subheading {
+  padding-top: 30px;
+}
+
+.tutorial_video {
+  border:lightgrey 2px solid !important;
+
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kylo</title>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-91421200-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom-styles.css"/>
+</head>
+<body id="bootstrap-overrides">
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-primary" >
+        <div class="navbar-header navbar-link">
+            <button type="button" class="navbar-toggle collapsed navbar-link" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://kylo.io">
+                <img alt="Kylo" src="assets/kylo.png" class="navbar-icon">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
+            <ul class="nav navbar-nav">
+
+                  <li>
+                    <a href="index.html" class="navbar-link" target="_self">OVERVIEW</a>
+                  </li>
+                  <li>
+                    <a href="quickstart.html" class="navbar-link" target="_self">QUICKSTART</a>
+                  </li>
+                  <li>
+                    <a href="tutorials.html" class="navbar-link" target="_self">TUTORIALS</a>
+                  </li>
+                  <li>
+                    <a href="docs.html" class="navbar-link" target="_self">DOCS</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KyloIO/kylo" class="navbar-link" target="_blank">SOURCE</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"  target="" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">COMMUNITY<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="https://groups.google.com/forum/#!forum/kylo-community" target="_blank">Forum Q&amp;A</a></li>
+                      <li><a href="https://kylo-io.atlassian.net/projects/KYLO" target="_blank">Issues</a></li>
+                      <li><a href="http://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html" target="_self">Contributing</a></li>
+                    </ul>
+                  </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right navbar-link">
+                <li>
+                    <a class="nav-a-btn" href="#">
+                        <button class="btn btn-primary" style="background-color:#3291e2;width:150px;" onclick="window.open('quickstart.html', '_self');">TRY NOW</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="hero">
+  <h2 class="feature-heading">Kylo Tutorials</h2>
+</div>
+<div class="subtitle">
+  <p align="center">Training videos for different organization roles. Become a Kylo ninja!</p>
+</div>
+
+<!--
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XJgIfoMUljI" allowfullscreen></iframe>
+  </div>
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-md-push-10 feature-sidebar">
+      <nav>
+        <h3><a href="#">Tutorials</a></h3>
+        <ul>
+          <li><a class="navbar-link" href="#user_tutorials">Users</a></li>
+          <li><a class="navbar-link" href="#designer_tutorials">Designers</a></li>
+          <li><a class="navbar-link" href="#admin_tutorials">Administrators</a></li>
+          <li><a class="navbar-link" href="#best_practices">Best Practices</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col-md-10 col-md-pull-2">
+
+      <div layout="row">
+
+        <div id="tutorials">
+          <h1 class="text-orange"><a name="user_tutorials"></a>User Tutorials</h1>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/lLBsxXlTljo?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Creating a Data Ingest Feed</span>
+                </h4>
+                <p class="lead">Create an data ingest feed using Kylo that ingest data from a flat file, applies cleansing and validation rules and brings it into hadoop.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/BIHJGItqgac?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">How to Wrangle Data (Part 1)</span>
+                </h4>
+                <p class="lead">Learn how to easily transform and prepare data.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/hPEurrMk11I/vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">How to Wrangle Data (Part 2)</span>
+                </h4>
+                <p class="lead">Continue on with data wrangling and learn more advanced functions and things you can do with the Kylo data wrangler. </p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/x64nzg0ZtoM?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Import and Export Feeds</span>
+                </h4>
+                <p class="lead">Learn how to export a feed from one environment and import it into another environment.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/DdlvQmyLRc8?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">More Features</span>
+                </h4>
+                <p class="lead">Watch a summary video that explores many features of Kylo including designing and registering templates, data ingestion, and data wrangling.</p>
+              </div>
+            </div>
+          <br/>
+          <hr/>
+          <h1 class="text-orange"><a name="designer_tutorials"></a>Designer Tutorials</h1>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/_lw3zvlqH8k?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Introduction to Templates</span>
+                </h4>
+                <p class="lead">This is an introductory tutorial on the concept of templates in Kylo. Feed templates embody the principle of write once/reuse many times. </p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/P6slvtxwMaM?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">How to Create Modular Flows</span>
+                </h4>
+                <p class="lead">This tutorial looks at techniques for creating modular feeds used as services and invoked by other feeds.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/XbRrK24N2Do?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Templates with Conditional NiFi Routing</span>
+                </h4>
+                <p class="lead">This advanced tutorial demonstrates how to take advantage of Apache NiFi routing and NiFi expressions to make templates more general purpose</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/Vj641MRJCd8?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Connecting to a Reusable Flow</span>
+                </h4>
+                <p class="lead">Learn how to create a simple feed based template and connect it to a reusable flow. </p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/vy68_mBGqO0?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Design a Data Confidence Feed</span>
+                </h4>
+                <p class="lead">Learn how to design and create a data confidence feed using Kylo.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <p align="center">
+                  <a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/how-to-guides/NiFiProcessorsDocs.html#triggerfeed" target="_blank" role="button">
+                    <img style=" display: block; margin: 0 auto;" class="tutorial_image featurette-image img-responsive center-block" src="assets/trigger_feed.png">
+                  </a>
+                </p>
+                <p align="center"><a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/how-to-guides/NiFiProcessorsDocs.html#triggerfeed" target="_blank" role="button">LEARN MORE</a></p>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Design a Feed with Preconditions</span>
+                </h4>
+                <p class="lead">Learn how to design a flow that depends upon the completion of another feed.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/9bx9JQ3ica4?vq=hd1080" allowfullscreen></iframe>
+                </div>
+                <p  align="center"><a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/how-to-guides/NiFiProcessorsDocs.html#importsqoop-processor" target="_blank" role="button">LEARN MORE</a></p>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Sqoop Based Ingest (Part 1)</span>
+                </h4>
+                <p class="lead">In this tutorial shows how to configure and run Sqoop based ingestion in Kylo. This specific video shows template registration.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/TpHI7dB61Ck?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Sqoop Based Ingest (Part 2)</span>
+                </h4>
+                <p class="lead">Learn how to configure and run a Sqoop based ingestion in Kylo. This video (part 2) shows how to create a feed that ingests a table for each run.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="https://www.youtube.com/embed/Ox7HD9LGbuA?vq=hd1080" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Sqoop Based Ingest (Part 3)</span>
+                </h4>
+                <p class="lead">Extend upon the previous Sqoop video and learn more about how to configure it with Kylo.</p>
+              </div>
+            </div>
+          <br/>
+          <hr/>
+          <h1 class="text-orange"><a name="admin_tutorials"></a>Administrator Tutorials</h1>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <p align="center">
+                  <a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/installation/KyloDeploymentGuide.html" target="_blank" role="button">
+                    <img style=" display: block; margin: 0 auto;" class="tutorial_image featurette-image img-responsive center-block" src="assets/kylo.png">
+                  </a>
+                </p>
+                <p align="center"><a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/installation/KyloDeploymentGuide.html" target="_blank" role="button">LEARN MORE</a></p>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Kylo Installation</span>
+                </h4>
+                <p class="lead">Learn how to install Kylo.</p>
+              </div>
+            </div>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <p align="center">
+                  <a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/installation/KyloDeploymentGuide.html#encrypting-configuration-property-values" target="_blank" role="button">
+                    <img style=" display: block; margin: 0 auto;" class="tutorial_image featurette-image img-responsive center-block" src="assets/kylo.png">
+                  </a>
+                </p>
+                <p align="center"><a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/installation/KyloDeploymentGuide.html#encrypting-configuration-property-values" target="_blank" role="button">LEARN MORE</a></p>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Encrypting Properties </span>
+                </h4>
+                <p class="lead">Learn how to encrypt configuration properties.</p>
+              </div>
+            </div>
+          <br/>
+          <hr/>
+          <h1 class="text-orange"><a name="best_practices"></a>Best Practices</h1>
+            <div class="row featurette">
+              <div class="col-sm-3">
+                <p align="center">
+                  <a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/tips-tricks/KyloBestPractices.html" target="_blank" role="button">
+                    <img style=" display: block; margin: 0 auto;" class="tutorial_image featurette-image img-responsive center-block" src="assets/checklist-2.png">
+                  </a>
+                </p>
+                <p align="center"><a class="btn btn-sm link-more" href="http://kylo.readthedocs.io/en/latest/tips-tricks/KyloBestPractices.html" target="_blank" role="button">LEARN MORE</a></p>
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">Best Practices </span>
+                </h4>
+                <p class="lead">Learn patterns and best practices for using and supporting Kylo.</p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+<!--
+    <div class="row">
+      <nav class="col-sm-2">
+        <h3><a href="index.html"  target="_self">Overview</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="quickstart.html"  target="_self">Quickstart</a></h3>
+        <ul>
+          <li><a class="navbar-link" target="_self" href="quickstart.html">Download Sandbox</a></li>
+          <li><a class="navbar-link" target="_self" href="quickstart.html">Intro Tutorial</a></li>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="tutorials.html"  target="_self">Tutorials</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="docs.html"  target="_self">Docs</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="https://github.com/KyloIO/kylo"  target="_blank">Source</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="#"  target="">Community</a></h3>
+        <ul>
+          <li><a class="navbar-link" target="_blank" href="https://groups.google.com/forum/#!forum/kylo-community">Forum Q&amp;A</a></li>
+          <li><a class="navbar-link" target="_blank" href="https://kylo-io.atlassian.net/projects/KYLO">Issues</a></li>
+          <li><a class="navbar-link" target="_self" href="http://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html">Contributing</a></li>
+        </ul>
+      </nav>
+    </div>
+-->
+    <div class="row">
+      <div class="col-sm-2 col-sm-push-8 social-icon" style="margin-top:12px">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="https://github.com/KyloIO/kylo">
+              <img src="assets/GitHub-Mark-Light-120px-plus.png">
+            </a>
+          </div>
+          <!-- <div class="col-sm-1 col-md-push-10 social-icon"> -->
+          <div class="col-sm-4">
+            <a href="https://twitter.com/ThinkBigKylo">
+              <img src="assets/Twitter_Logo_White_On_Image.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-2" id="copyright">
+        &copy; 2017 Teradata Inc. All Rights Reserved
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>

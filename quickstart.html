@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kylo</title>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-91421200-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom-styles.css"/>
+</head>
+<body id="bootstrap-overrides">
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-primary" >
+        <div class="navbar-header navbar-link">
+            <button type="button" class="navbar-toggle collapsed navbar-link" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://kylo.io">
+                <img alt="Kylo" src="assets/kylo.png" class="navbar-icon">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
+            <ul class="nav navbar-nav">
+
+                  <li>
+                    <a href="index.html" class="navbar-link" target="_self">OVERVIEW</a>
+                  </li>
+                  <li>
+                    <a href="quickstart.html" class="navbar-link" target="_self">QUICKSTART</a>
+                  </li>
+                  <li>
+                    <a href="tutorials.html" class="navbar-link" target="_self">TUTORIALS</a>
+                  </li>
+                  <li>
+                    <a href="docs.html" class="navbar-link" target="_self">DOCS</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KyloIO/kylo" class="navbar-link" target="_blank">SOURCE</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"  target="" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">COMMUNITY<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="https://groups.google.com/forum/#!forum/kylo-community" target="_blank">Forum Q&amp;A</a></li>
+                      <li><a href="https://kylo-io.atlassian.net/projects/KYLO" target="_blank">Issues</a></li>
+                      <li><a href="http://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html" target="_self">Contributing</a></li>
+                    </ul>
+                  </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right navbar-link">
+                <li>
+                    <a class="nav-a-btn" href="#">
+                        <button class="btn btn-primary" style="background-color:#3291e2;width:150px;" onclick="window.open('quickstart.html', '_self');">TRY NOW</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<h1 class="title">Quick Start</h1>
+<!-- <h2 class="subtitle">Let's get started</h2> -->
+
+
+<div id="features" class="container" style="margin-top:20px">
+  <div class="row">
+    <div class="col-md-2 col-md-push-10 feature-sidebar">
+      &nbsp;
+      <!--
+            <nav>
+
+              <h3><a href="#">Links Heading</a></h3>
+              <ul>
+                <li><a class="navbar-link" href="#">Link Here</a></li>
+                <li><a class="navbar-link" href="#">Long Link Here</a></li>
+                <li><a class="navbar-link" href="#">A Link</a></li>
+                <li><a class="navbar-link" href="#">Short Link</a></li>
+              </ul>
+            </nav>
+
+            <button class="btn btn-primary" style="background-color:#3291e2;width:150px;">TRY NOW</button>
+      -->
+    </div>
+
+    <div class="col-md-10 col-md-pull-2">
+
+      <div class="row">
+        <h1 class="text-blue">Kylo Sandbox</h1>
+        <div class="lead">The Kylo Sandbox is a personal virtual environment so you can quickly get started with Kylo. The sandbox is a pre-configured Kylo instance with Apache
+          Hadoop,
+          Spark, and NiFi. The tutorials below will teach you how to create your first ingest feed and wrangle data.</div>
+
+        <ol>
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">1</h4>
+            <h4 class="col-sm-8 step-text-aligned">Download Kylo Sandbox for VirtualBox * </h4>
+            <button class="btn btn-solid-orange col-sm-2 h2-aligned" onclick="window.open('http://bit.ly/2kvKScO')">DOWNLOAD</button>
+          </div>
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">2</h4>
+            <h4 class="col-sm-10 step-text-aligned">In VirtualBox: File | Import Appliance</h4>
+          </div>
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">3</h4>
+            <h4 class="col-sm-10 step-text-aligned">Start VM and allow up to 10 minutes to start services</h4>
+          </div>
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">4</h4>
+            <h4 class="col-sm-10 step-text-aligned">From web browser:  <a href="http://localhost:8400/ops-mgr/index.html">Kylo Ops Manager</a> | <a
+                href="http://localhost:8400/feed-mgr/index.html">Kylo
+              Feed Manager</a></h4>
+          </div>
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">5</h4>
+            <h4 class="col-sm-10 step-text-aligned">Application login: dladmin/thinkbig, Sandbox OS login: root/kylo</h4>
+          </div>
+          <hr class="step-hr"/>
+          <small>* Requires <a href="https://www.virtualbox.org/wiki/Downloads">Oracle VirtualBox</a>. Recommended 20GB disk space and 10GB RAM.</small>
+          </ol>
+      </div>
+
+      <br/>
+      <div class="row">
+        <h1 class="text-blue">Intro Tutorials</h1>
+        <div class="lead">The following tutorials will get you quickly started with Kylo:</div>
+      </div>
+
+      <div class="row featurette" style="margin-top:20px">
+        <div class="col-sm-5">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item quickstart-video" src="https://www.youtube.com/embed/lLBsxXlTljo?vq=hd1080" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <h2 class="featurette-heading">Creating a Data Ingest feed</h2>
+          <p class="lead">Create an data ingest feed  <a href="assets/userdata6.csv">Download sample file</a></p>
+        </div>
+      </div>
+      <div class="row featurette" style="margin-top:20px">
+        <div class="col-sm-5">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item quickstart-video" src="https://www.youtube.com/embed/BIHJGItqgac?vq=hd1080" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <h2 class="featurette-heading">Creating a simple Wrangling feed</h2>
+          <p class="lead">Learn how to easily transform and prepare data.</p>
+        </div>
+      </div>
+      <div class="row featurette" style="margin-top:20px">
+        <div class="col-sm-5">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item quickstart-video" src="https://www.youtube.com/embed/DdlvQmyLRc8?vq=hd1080" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <h2 class="featurette-heading">Watch full video for more features</h2>
+          <p class="lead">Explore many of the features of Kylo</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+<!--
+    <div class="row">
+      <nav class="col-sm-2">
+        <h3><a href="index.html"  target="_self">Overview</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="quickstart.html"  target="_self">Quickstart</a></h3>
+        <ul>
+          <li><a class="navbar-link" target="_self" href="quickstart.html">Download Sandbox</a></li>
+          <li><a class="navbar-link" target="_self" href="quickstart.html">Intro Tutorial</a></li>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="tutorials.html"  target="_self">Tutorials</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="docs.html"  target="_self">Docs</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="https://github.com/KyloIO/kylo"  target="_blank">Source</a></h3>
+        <ul>
+        </ul>
+      </nav>
+      <nav class="col-sm-2">
+        <h3><a href="#"  target="">Community</a></h3>
+        <ul>
+          <li><a class="navbar-link" target="_blank" href="https://groups.google.com/forum/#!forum/kylo-community">Forum Q&amp;A</a></li>
+          <li><a class="navbar-link" target="_blank" href="https://kylo-io.atlassian.net/projects/KYLO">Issues</a></li>
+          <li><a class="navbar-link" target="_self" href="http://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html">Contributing</a></li>
+        </ul>
+      </nav>
+    </div>
+-->
+    <div class="row">
+      <div class="col-sm-2 col-sm-push-8 social-icon" style="margin-top:12px">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="https://github.com/KyloIO/kylo">
+              <img src="assets/GitHub-Mark-Light-120px-plus.png">
+            </a>
+          </div>
+          <!-- <div class="col-sm-1 col-md-push-10 social-icon"> -->
+          <div class="col-sm-4">
+            <a href="https://twitter.com/ThinkBigKylo">
+              <img src="assets/Twitter_Logo_White_On_Image.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-2" id="copyright">
+        &copy; 2017 Teradata Inc. All Rights Reserved
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>
