@@ -104,6 +104,19 @@ body {
   width: 100%;
 }
 
+.one-line-feature-heading {
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  font-size:40px;
+}
+
+
 .featurette-heading {
 	font-weight: 300;
 	line-height: 1;
