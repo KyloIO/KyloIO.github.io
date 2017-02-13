@@ -1,0 +1,85 @@
+{% extends "base-template.html" %}
+
+{% block title %}Kylo{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+  <h2 class="one-line-feature-heading">Kylo Tutorials</h2>
+</div>
+<div class="subtitle">
+  <p align="center">Training videos for different organization roles. Become a Kylo ninja!</p>
+</div>
+
+<!--
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XJgIfoMUljI" allowfullscreen></iframe>
+  </div>
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-md-push-10 feature-sidebar">
+      <nav>
+        <h3><a href="#">Tutorials</a></h3>
+        <ul>
+          {% for group in tutorials %}
+          <li><a class="navbar-link" href="#{{group.href}}">{{group.short_name}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col-md-10 col-md-pull-2">
+
+      <div layout="row">
+
+        <div id="tutorials">
+          {% for group in tutorials %}
+          {% if group.name != 'User Tutorials' %}
+          <br/>
+          <hr/>
+          {% endif %}
+          <h1 class="text-orange"><a name="{{group.href}}"></a>{{group.name}}</h1>
+            {% for tutorial in group.tutorials %}
+            <div class="row featurette">
+              <div class="col-sm-3">
+                {% if tutorial.video != null %}
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="tutorial_video embed-responsive-item " src="{{ tutorial.video }}" allowfullscreen></iframe>
+                </div>
+                {% elif tutorial.image != null %}
+                <p align="center">
+                  <a class="btn btn-sm link-more" href="{{ tutorial.documentation_link}}" target="_blank" role="button">
+                    <img style=" display: block; margin: 0 auto;" class="tutorial_image featurette-image img-responsive center-block" src="{{ tutorial.image }}">
+                  </a>
+                </p>
+                <p align="center"><a class="btn btn-sm link-more" href="{{ tutorial.documentation_link}}" target="_blank" role="button">LEARN MORE</a></p>
+                {% endif %}
+                {% if tutorial.documentation_link != null and tutorial.video != null %}
+                <p  align="center"><a class="btn btn-sm link-more" href="{{ tutorial.documentation_link}}" target="_blank" role="button">LEARN MORE</a></p>
+                {% endif %}
+              </div>
+              <div class="col-sm-9">
+                <h4 class="featurette-heading">
+                  <span class="text-blue">{{ tutorial.heading }}</span>
+                </h4>
+                <p class="lead">{{ tutorial.description }}</p>
+                {% if tutorial.long_description != null %}
+                <p><a class="btn-sm btn-more" data-toggle="collapse" data-target="#long-description-{{loop.index}}" role="button">READ MORE <span class="caret"></span></a></p>
+                <div class="lead collapse featurette-more" id="long-description-{{loop.index}}">{{ tutorial.long_description }}</div>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

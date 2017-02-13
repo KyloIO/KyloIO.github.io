@@ -1,0 +1,132 @@
+{% extends "base-template.html" %}
+
+{% block title %}Kylo{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+  <h2 class="feature-heading">Kylo is an open-source data lake<br/>
+    management platform</h2>
+</div>
+<div class="subtitle">
+  Kylo offers a turn-key, enterprise-ready data lake solution on Hadoop and Spark that integrates best practices around metadata management,
+  governance, and security gleaned from over <a
+    href="http://www.thinkbiganalytics.com">Think Big's</a>
+  150+ successful big data projects.
+</div>
+
+<!--
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XJgIfoMUljI" allowfullscreen></iframe>
+  </div>
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-md-push-10 feature-sidebar">
+      <nav>
+        <h3><a href="#">Overview</a></h3>
+        <ul>
+          <li><a class="navbar-link" href="#using">Who uses Kylo?</a></li>
+          <li><a class="navbar-link" href="#features">Feature Overview</a></li>
+          <li><a class="navbar-link" target="_blank" href="https://www.youtube.com/watch?v=AB9Y01AYuxQ&q=hd1080">Feature Video</a></li>
+          <li><a class="navbar-link" target="_blank" href="assets/EB9545_Kylo.pdf">Datasheet</a></li>
+          <li><a class="navbar-link" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col-md-9 col-md-pull-2">
+
+      <div layout="row">
+
+        <div id="diagram" style="margin-top:30px">
+          <img class="img-responsive" height="80%" width="80%" src="assets/kylo_data_lake.png">
+        </div>
+
+        <div id="features">
+
+          <h1 class="text-orange subheading">Features</h1>
+
+          {% for feature in features %}
+          <div class="row featurette">
+            <div class="col-sm-4">
+              <img class="img-circle featurette-image img-responsive center-block" src="{{ feature.image }}">
+            </div>
+            <div class="col-sm-8">
+              <h2 class="featurette-heading">{{ feature.heading }}</h2>
+              <p class="lead">{{ feature.description }}</p>
+              <p><a class="btn-sm btn-more" data-toggle="collapse" data-target="#long-description-{{loop.index}}" role="button">READ MORE <span class="caret"></span></a></p>
+              <div class="lead collapse featurette-more" id="long-description-{{loop.index}}">{{ feature.long_description }}</div>
+            </div>
+          </div>
+          {% endfor %}
+
+          <h1 class="text-orange subheading" id="using">Who uses Kylo?</h1>
+          <div class="lead">
+          Kylo is being used by leading organizations:
+          </div>
+          <div style="margin:30px 0px 30px 30px;padding-bottom:30px">
+            <div class="col-md-6">
+              <img class="img-responsive" src="assets/whos_using2a.jpg">
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive" src="assets/whos_using2b.jpg">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<div id="testimonials" class="carousel slide" data-ride="carousel" data-interval=10000>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for testimonial in testimonials %}
+    <li data-target="#testimonials" data-slide-to="{{ loop.index0 }}" {% if loop.first %} class="active" {% endif %}></li>
+    {% endfor %}
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    {% for testimonial in testimonials %}
+    <div class="item {% if loop.first %} active {% endif %}">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="row quote-symbol">
+              <h1>&#x201C;</h1>
+            </div>
+            <div class="row quote-speaker">
+              <h2>{{ testimonial.speaker }}</h2>
+            </div>
+            <div class="row quote-speaker-details">
+              <h3>{{ testimonial.title }}</h3>
+            </div>
+          </div>
+          <div class="carousel-caption col-sm-10">
+            <h1>{{ testimonial.headline }}</h1>
+            <p class="quote-text">{{ testimonial.quote }}</p>
+            <!-- <p><a class="btn btn-sm btn-blue" href="#" role="button">Read More</a></p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="left carousel-control" href="#testimonials" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#testimonials" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{% endblock %}
