@@ -11,17 +11,11 @@
   <p align="center">Training videos for different organization roles. Become a Kylo ninja!</p>
 </div>
 
-<!--
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XJgIfoMUljI" allowfullscreen></iframe>
-  </div>
--->
-
-<div class="container">
+<div id="features" class="container">
   <div class="row">
     <div class="col-md-2 col-md-push-10 feature-sidebar">
       <nav>
-        <h3><a href="#">Tutorials</a></h3>
+        <h1 class="text-orange subheading">Tutorials</h1>
         <ul>
           {% for group in tutorials %}
           <li><a class="navbar-link" href="#{{group.href}}">{{group.short_name}}</a></li>
@@ -37,10 +31,9 @@
         <div id="tutorials">
           {% for group in tutorials %}
           {% if group.name != 'User Tutorials' %}
-          <br/>
           <hr/>
           {% endif %}
-          <h1 class="text-orange"><a name="{{group.href}}"></a>{{group.name}}</h1>
+          <h1 class="text-orange subheading"><a name="{{group.href}}"></a>{{group.name}}</h1>
             {% for tutorial in group.tutorials %}
             <div class="row featurette">
               <div class="col-sm-3">

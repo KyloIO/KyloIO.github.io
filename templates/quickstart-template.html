@@ -3,35 +3,23 @@
 {% block title %}Kylo{% endblock %}
 
 {% block content %}
-<div class="hero">
-<h1 class="one-line-feature-heading">Quick Start</h1>
+  <div class="hero">
+    <h2 class="one-line-feature-heading">Quick Start</h2>
+  </div>
+<div class="subtitle">
+  <p align="center">Try out Kylo</p>
 </div>
 
-
-<div id="features" class="container" style="margin-top:20px">
+<div id="features" class="container">
   <div class="row">
     <div class="col-md-2 col-md-push-10 feature-sidebar">
       &nbsp;
-      <!--
-            <nav>
-
-              <h3><a href="#">Links Heading</a></h3>
-              <ul>
-                <li><a class="navbar-link" href="#">Link Here</a></li>
-                <li><a class="navbar-link" href="#">Long Link Here</a></li>
-                <li><a class="navbar-link" href="#">A Link</a></li>
-                <li><a class="navbar-link" href="#">Short Link</a></li>
-              </ul>
-            </nav>
-
-            <button class="btn btn-primary" style="background-color:#3291e2;width:150px;">TRY NOW</button>
-      -->
     </div>
 
     <div class="col-md-10 col-md-pull-2">
 
       <div class="row">
-        <h1 class="text-blue">Kylo Sandbox</h1>
+        <h1 class="text-orange subheading">Kylo Sandbox</h1>
         <div class="lead">The Kylo Sandbox is a personal virtual environment so you can quickly get started with Kylo. The sandbox is a pre-configured Kylo instance with Apache
           Hadoop,
           Spark, and NiFi. The tutorials below will teach you how to create your first ingest feed and wrangle data.</div>
@@ -70,21 +58,22 @@
           </ol>
       </div>
 
-      <br/>
       <div class="row">
-        <h1 class="text-blue">Intro Tutorials</h1>
-        <div class="lead">The following tutorials will get you quickly started with Kylo:</div>
+        <h1 class="text-orange subheading">Intro Tutorials</h1>
+        <div class="lead">The following introductory tutorials will get you quickly started with Kylo:</div>
       </div>
 
       {% for step in items %}
       <div class="row featurette" style="margin-top:20px">
-        <div class="col-sm-5">
-          <div class="embed-responsive embed-responsive-4by3">
+        <div class="col-sm-3">
+          <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item quickstart-video" src="{{ step.video }}" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-sm-7">
-          <h2 class="featurette-heading">{{ step.heading }}</h2>
+        <div class="col-sm-9">
+          <h4 class="featurette-heading">
+            <span class="text-blue">{{ step.heading }}</span>
+          </h4>
           <p class="lead">{{ step.description }}</p>
         </div>
       </div>
