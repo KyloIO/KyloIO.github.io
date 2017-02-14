@@ -7,10 +7,10 @@ body {
 }
 
 .hero {
-  background: url('../assets/hero-bg2.jpg') 50% 50% repeat;
+  background: url('../assets/hero-bg3.jpg') 50% 50% repeat;
   height: 120px;
   position:relative;
-  opacity: 0.80;
+  /* opacity: 0.80; */
 
 }
 
