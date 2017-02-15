@@ -448,3 +448,24 @@ iframe.docs {
   border:lightgrey 2px solid !important;
 
 }
+
+.org-container {
+  margin:30px 0px 30px 30px;
+}
+
+.org-item {
+  margin-top: 15px;
+}
+
+.org-industry {
+  font-size:22px;
+  font-weight: 600;
+  vertical-align: bottom;
+  margin: 0px;
+}
+
+.org-description {
+  font-size:18px;
+  vertical-align: top;
+  font-weight: 400;
+}

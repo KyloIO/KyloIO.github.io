@@ -103,8 +103,40 @@ testimonials = [
 
 def build_index():
 
+	organizations = [
+        {
+            "image": "assets/icon-airlines.png",
+            "industry": "Airline",
+            "description": "2 companies of top 15 global brands"
+        },
+        {
+            "image": "assets/icon-insurance.png",
+            "industry": "Insurance",
+            "description": "2 companies of top 10 US brands"
+        },
+        {
+            "image": "assets/icon-telecom.png",
+            "industry": "Telecommunications",
+            "description": "2 companies of top 10 European brands"
+        },
+        {
+            "image": "assets/icon-financial.png",
+            "industry": "Financial Services",
+            "description": "1 company of top 5 global brands"
+        },
+        {
+            "image": "assets/icon-banking.png",
+            "industry": "Banking",
+            "description": "2 companies of top 5 global brands"
+        },
+        {
+            "image": "assets/icon-shopping.png",
+            "industry": "Retail and Consumer Goods",
+            "description": "2 companies of top 10 global brands"
+        }
+    ]
 	template = env.get_template('index-template.html')
-	return template.render(features=key_features, testimonials=testimonials, footer_links=footer_links)
+	return template.render(organizations=organizations, features=key_features, testimonials=testimonials, footer_links=footer_links)
 
 
 def build_tutorials():
@@ -245,7 +277,7 @@ def build_tutorials():
             "href":'best_practices',
             "short_name":"Best Practices"
         }
-]
+    ]
 
 	template = env.get_template('tutorials-template.html')
 	return template.render(tutorials=tutorials, footer_links=footer_links)
@@ -256,17 +288,17 @@ def quickstart_overview():
 		{
 			"heading": "Creating a Data Ingest feed",
 			"description": "Create an data ingest feed  <a href=\"assets/userdata6.csv\">Download sample file</a>",
-			"video": "https://www.youtube.com/embed/lLBsxXlTljo?vq=hd1080"
+			"video": "https://www.youtube.com/embed/lLBsxXlTljo?vq=hd720"
 		},
 		{
 			"heading": "Creating a simple Wrangling feed",
 			"description": "Learn how to easily transform and prepare data.",
-			"video": "https://www.youtube.com/embed/BIHJGItqgac?vq=hd1080"
+			"video": "https://www.youtube.com/embed/BIHJGItqgac?vq=hd720"
 		},
 		{
 			"heading": "Watch full video for more features",
 			"description": "Explore many of the features of Kylo",
-			"video": "https://www.youtube.com/embed/DdlvQmyLRc8?vq=hd1080"
+			"video": "https://www.youtube.com/embed/DdlvQmyLRc8?vq=hd720"
 		}
 
 	]
