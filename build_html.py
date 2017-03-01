@@ -182,27 +182,32 @@ def build_tutorials():
         {
             "heading": "Introduction to Templates",
             "description": "This is an introductory tutorial on the concept of templates in Kylo. Feed templates embody the principle of write once/reuse many times. ",
-            "video": "https://www.youtube.com/embed/_lw3zvlqH8k?vq=hd1080"
+            "video": "https://www.youtube.com/embed/_lw3zvlqH8k?vq=hd720"
         },
+        {
+            "heading": "How to Modify an Existing Template",
+            "description": "This tutorial shows how to modify the default Kylo ingest template to add Kafka support.",
+            "video": "https://www.youtube.com/embed/NBwOqd1Wycc?vq=hd720"
+        },
+        {
+             "heading": "Connecting to a Reusable Flow",
+             "description": "Learn how to create a simple feed based template and connect it to a reusable flow. ",
+             "video": "https://www.youtube.com/embed/Vj641MRJCd8?vq=hd720"
+         },
         {
             "heading": "How to Create Modular Flows",
             "description": "This tutorial looks at techniques for creating modular feeds used as services and invoked by other feeds.",
-            "video": "https://www.youtube.com/embed/P6slvtxwMaM?vq=hd1080"
+            "video": "https://www.youtube.com/embed/P6slvtxwMaM?vq=hd720"
         },
         {
             "heading": "Templates with Conditional NiFi Routing",
             "description": "This advanced tutorial demonstrates how to take advantage of Apache NiFi routing and NiFi expressions to make templates more general purpose",
-            "video": "https://www.youtube.com/embed/XbRrK24N2Do?vq=hd1080"
-        },
-        {
-            "heading": "Connecting to a Reusable Flow",
-            "description": "Learn how to create a simple feed based template and connect it to a reusable flow. ",
-            "video": "https://www.youtube.com/embed/Vj641MRJCd8?vq=hd1080"
+            "video": "https://www.youtube.com/embed/XbRrK24N2Do?vq=hd720"
         },
         {
             "heading": "Design a Data Confidence Feed",
-            "description": "Learn how to design and create a data confidence feed using Kylo.",
-            "video": "https://www.youtube.com/embed/vy68_mBGqO0?vq=hd1080"
+            "description": "Learn how to design and create a custom data quality validation using Kylo.",
+            "video": "https://www.youtube.com/embed/vy68_mBGqO0?vq=hd720"
         },
         {
             "heading": "Design a Feed with Preconditions",
