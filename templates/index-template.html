@@ -67,16 +67,17 @@
           <div class="org-container">
 
             {% for org in organizations %}
-
-                <div class="row org-item">
-                  <div class="col-sm-1">
+              {{ '<div class="row org-item" style="padding-bottom: 10px;">' if loop.index is odd }}
+                  <div class="col-md-6">
+                  <div class="col-sm-3">
                     <img class="img-responsive center-block" src="{{ org.image }}">
                   </div>
-                  <div class="col-sm-8">
+                  <div class="col-sm-9">
                     <h2  class="org-industry text-blue">{{ org.industry }}</h2>
                     <p class="org-description">{{  org.description }}</p>
                   </div>
-                </div>
+              </div>
+              {{ '</div>' if loop.index is even or loop.last }}
             {% endfor %}
           </div>
 
