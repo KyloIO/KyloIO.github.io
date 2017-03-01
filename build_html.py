@@ -92,6 +92,12 @@ testimonials = [
 			'title': 'Director, R&amp;D',
 			'headline': 'Think Big, A Teradata Company',
             'quote': 'Our commitment to open-source Kylo was a no-brainer given the tremendous benefits we have received from the Hadoop ecosystem.  Kylo\'s success in beta with over a dozen major organizations worldwide gives us confidence that this contribution will help advance the community and the organizations we serve.',		},
+        {
+            'speaker': 'Ka Tang',
+            'title': 'Director, Enterprise Data Architecture',
+            'headline': 'Discover Financial Services',
+            'quote': 'Discover is focused on leveraging leading edge technology that helps us quickly bring products to market while providing exceptional customer service. Kylo has a unique framework that has the potential to accelerate development and value on new data sources that leverage Apache NiFi.',
+        },
 		{
 			'speaker': 'Rick Farnell',
 			'title': 'President, Think Big',
