@@ -88,10 +88,10 @@
 
 
   <div class="hero">
-    <h2 class="one-line-feature-heading">Quick Start</h2>
+    <h2 class="one-line-feature-heading">Quick Start - AWS</h2>
   </div>
 <div class="subtitle">
-  <p align="center">Ready to try out Kylo?</p>
+  <p align="center">Want to try out Kylo in the cloud?</p>
 </div>
 
 <div id="features" class="container">
@@ -103,52 +103,77 @@
     <div class="col-md-10 col-md-pull-2">
 
       <div class="row">
-
         <h1 class="text-orange subheading">Kylo AWS Sandbox</h1>
-        <div class="lead">Try Kylo in the cloud with Amazon Web Services.  The AWS sandbox
-          AMI image is a pre-configured Kylo instance with Apache Hadoop, Spark, and NiFi.</div>
-
-        <h4>Click <a href="quickstart-ami.html">here</a> for AWS instructions</h4>
-      </div>
-
-      <div class="row">
-
-        <h1 class="text-orange subheading">Kylo Sandbox</h1>
-        <div class="lead">The Kylo Sandbox is a personal virtual environment so you can quickly get started with Kylo. The sandbox is a pre-configured Kylo instance with Apache
-          Hadoop,
-          Spark, and NiFi. The tutorials below will teach you how to create your first ingest feed and wrangle data.</div>
+        <div class="lead">Try Kylo in the cloud with Amazon Web Services.  The directions below will allow you to test drive Kylo in a cloud-hosted environment. The AWS sandbox
+          image is a pre-configured Kylo instance with Apache Hadoop, Spark, and NiFi. The tutorials below will teach you how to create your first ingest feed and wrangle data.</div>
 
         <ol>
           <hr class="step-hr"/>
           <div class="row">
             <h4 class="col-sm-2 circle-li">1</h4>
-            <h4 class="col-sm-8 step-text-aligned">Download Kylo Sandbox for VirtualBox * </h4>
-            <button class="btn btn-solid-orange col-sm-2 h2-aligned" onclick="window.open('http://bit.ly/2lasGIN')">DOWNLOAD</button>
+            <h4 class="col-sm-8 step-text-aligned">Login to your AWS Account Console </h4>
+            <button class="btn btn-solid-orange col-sm-2 h2-aligned" onclick="window.open('https://console.aws.amazon.com/console/home')">LOGIN</button>
           </div>
           <hr class="step-hr"/>
           <div class="row">
             <h4 class="col-sm-2 circle-li">2</h4>
-            <h4 class="col-sm-10 step-text-aligned">In VirtualBox: File | Import Appliance</h4>
+            <h4 class="col-sm-10 step-text-aligned">Navigate to EC2 | AMI</h4>
           </div>
           <hr class="step-hr"/>
           <div class="row">
             <h4 class="col-sm-2 circle-li">3</h4>
-            <h4 class="col-sm-10 step-text-aligned">Start VM and allow up to 10 minutes to start services</h4>
+            <h4 class="col-sm-10 step-text-aligned">Choose appropriate region and search for one of the public AMI images below:
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Region</th>
+                  <th>AMI Image ID</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>US West (Oregon)</td>
+                  <td>ami-f01e9090</td>
+                </tr>
+                <tr>
+                  <td>US East (N. Virginia)</td>
+                  <td>ami-707cd266</td>
+                </tr>
+                <tr>
+                  <td>EU (Ireland)</td>
+                  <td>ami-1a10277c</td>
+                </tr>
+                <tr>
+                  <td>Asia Pacific (Seoul)</td>
+                  <td>ami-17d00379</td>
+                </tr>
+                <tr>
+                  <td>Asia Pacific (Mumbai)</td>
+                  <td>ami-9986f6f6</td>
+                </tr>
+                </tbody>
+              </table>
+            </h4>
           </div>
           <hr class="step-hr"/>
           <div class="row">
             <h4 class="col-sm-2 circle-li">4</h4>
-            <h4 class="col-sm-10 step-text-aligned">From web browser:  <a href="http://localhost:8400/ops-mgr/index.html">Kylo Ops Manager</a> | <a
-                href="http://localhost:8400/feed-mgr/index.html">Kylo
-              Feed Manager</a></h4>
+            <h4 class="col-sm-10 step-text-aligned">Launch the AMI (choose m4.2xlarge).  Wait up to 25 minutes for first-time bootstrap, subsequent boot is about 10
+              minutes. Make sure to configure your security group to allow TCP access from your <a href="http://whismyip.org" target="_blank">public IP</a>.
+            </h4>
+          </div>
+
+          <hr class="step-hr"/>
+          <div class="row">
+            <h4 class="col-sm-2 circle-li">5</h4>
+            <h4 class="col-sm-10 step-text-aligned">From your web browser, navigate to the instances public IP http://your-instance-ip and additional instructions will be visible</h4>
           </div>
           <hr class="step-hr"/>
           <div class="row">
             <h4 class="col-sm-2 circle-li">5</h4>
-            <h4 class="col-sm-10 step-text-aligned">Application login: dladmin/thinkbig, Sandbox OS login: root/kylo</h4>
+            <h4 class="col-sm-10 step-text-aligned">Application login: dladmin/thinkbig</h4>
           </div>
           <hr class="step-hr"/>
-          <small>* Requires <a href="https://www.virtualbox.org/wiki/Downloads">Oracle VirtualBox</a>. Recommended 20GB disk space and 10GB RAM.</small>
           </ol>
       </div>
 

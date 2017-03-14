@@ -293,7 +293,7 @@ def build_tutorials():
 	template = env.get_template('tutorials-template.html')
 	return template.render(tutorials=tutorials, footer_links=footer_links)
 
-def quickstart_overview():
+def quickstart_overview( templateName ):
 
 	items = [ 
 		{
@@ -337,8 +337,9 @@ def quickstart_overview():
 		},
 	]
 
-	template = env.get_template('quickstart-template.html')
+	template = env.get_template(templateName)
 	return template.render(items=items, applications=applications, footer_links=footer_links)
+
 
 
 def build_docs():
@@ -359,8 +360,13 @@ if __name__ == "__main__":
 	with open('tutorials.html', 'w') as f:
 		f.write(build_tutorials())
 
+	with open('quickstart-ami.html', 'w') as f:
+		f.write(quickstart_overview('quickstart-ami-template.html'))
+
 	with open('quickstart.html', 'w') as f:
-		f.write(quickstart_overview())
+		f.write(quickstart_overview('quickstart-template.html'))
 
 	with open('docs.html', 'w') as f:
 		f.write(build_docs())
+
+
