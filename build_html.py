@@ -158,8 +158,9 @@ def build_tutorials():
 	user_tutorials = [
 		{
 			"heading": "Creating a Data Ingest Feed",
-			"description": "Create an data ingest feed using Kylo that ingest data from a flat file, applies cleansing and validation rules and brings it into hadoop.",
-			"video": "https://www.youtube.com/embed/lLBsxXlTljo?vq=hd1080"
+			"description": "Create an data ingest feed using Kylo that ingest data from a flat file, applies cleansing and validation rules and brings it into hadoop. <a "
+                           "href=\"assets/userdata2.csv\">Download sample file</a>",
+			"video": "https://www.youtube.com/embed/ACvR0GPV8zE?ecver=1?vq=hd720"
 		},
 		{
 			"heading": "How to Wrangle Data (Part 1)",
@@ -298,8 +299,8 @@ def quickstart_overview( templateName ):
 	items = [ 
 		{
 			"heading": "Creating a Data Ingest feed",
-			"description": "Create an data ingest feed  <a href=\"assets/userdata6.csv\">Download sample file</a>",
-			"video": "https://www.youtube.com/embed/lLBsxXlTljo?vq=hd720"
+			"description": "Create an data ingest feed  <a href=\"assets/userdata2.csv\">Download sample file</a>",
+			"video": "https://www.youtube.com/embed/ACvR0GPV8zE?ecver=1?vq=hd720"
 		},
 		{
 			"heading": "Creating a simple Wrangling feed",
