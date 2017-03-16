@@ -165,7 +165,7 @@ def build_tutorials():
 		{
 			"heading": "How to Wrangle Data (Part 1)",
 			"description": "Learn how to easily transform and prepare data.",
-			"video": "https://www.youtube.com/embed/BIHJGItqgac?vq=hd1080"
+			"video": "https://www.youtube.com/embed/rUtcBOXqLAM?ecver=1&hd720"
 		},
         {
             "heading": "How to Wrangle Data (Part 2)",
@@ -305,7 +305,7 @@ def quickstart_overview( templateName ):
 		{
 			"heading": "Creating a simple Wrangling feed",
 			"description": "Learn how to easily transform and prepare data.",
-			"video": "https://www.youtube.com/embed/BIHJGItqgac?vq=hd720"
+			"video": "https://www.youtube.com/embed/rUtcBOXqLAM?ecver=1&hd720"
 		},
 		{
 			"heading": "Watch full video for more features",
