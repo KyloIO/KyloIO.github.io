@@ -40,7 +40,7 @@ footer_links = [
 		'sublinks': [
 			{'name': 'Forum Q&amp;A', 'target': '_blank', 'href': 'https://groups.google.com/forum/#!forum/kylo-community'},
 			{'name': 'Issues', 'target': '_blank', 'href': 'https://kylo-io.atlassian.net/projects/KYLO'},
-			{'name': 'Contributing', 'target': '_self', 'href': 'http://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html'},
+			{'name': 'Contributing', 'target': '_self', 'href': 'https://kylo.readthedocs.io/en/latest/developer-guides/ContributingtoKylo.html'},
 		]
 	},
 ]
