@@ -24,8 +24,8 @@ footer_links = [
 
        	}, {
 		'name': 'Docs',
-		'href': 'docs.html',
-        'target': '_self',
+		'href': 'https://kylo.readthedocs.io',
+        'target': '_blank',
 		'sublinks': [ ]
 
 	}, {
