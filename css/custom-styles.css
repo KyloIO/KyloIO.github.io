@@ -362,13 +362,6 @@ div.quote-speaker-details h3 {
 .nocircle-li {
   width: 35px;
   height: 35px;
-  border-radius: 50px;
-  text-align: center;
-
-  padding-top: 7px;
-  padding-left: 13px;
-  font-weight: 700;
-  color: white;
 }
 
 .step-hr {
