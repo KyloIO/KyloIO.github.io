@@ -427,8 +427,8 @@ footer h3 a {
 	width: 100%;
 }
 
-#copyright {
-	color: #b2c1c6;
+.footer-text {
+	color: #fafafa;
 	bottom: -25px;
 }
 
