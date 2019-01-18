@@ -30,7 +30,7 @@ footer_links = [
 
 	}, {
        		'name': 'Source',
-       		'href': 'https://github.com/KyloIO/kylo',
+       		'href': 'https://github.com/Teradata/kylo',
        		'target': '_blank',
        		'sublinks': [ ]
      }, {
